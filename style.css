@@ -1,0 +1,151 @@
+/* .movieCard {
+    height: 400px;
+    margin-bottom: 0;
+    background-color: #373b69;
+    overflow: hidden;
+}
+body {
+    background-color: #22254b;
+}
+.movieCard img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.overview.p-2 {
+    position: absolute;
+    top: 100%;
+    transition: all .4s ease-in-out;
+}
+.name {
+    position: absolute;
+    bottom: 0;
+    background: #373b69;
+    color: #fff;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    height: 100px;
+}
+.movieCard:hover .overview {
+    top: 35%;
+    background-color: #fff;
+} */
+
+
+:root {
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    background-color: var(--secondary-color);
+}
+
+main{
+    background-color: var(--primary-color);
+    min-height: 100vh;
+}
+.header .form-group{
+    margin-bottom: 0;
+    width: 100%;
+    display: table;
+    clear: both;
+}
+
+.header input{
+    width: 20%;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    float: right;
+}
+
+.header input:focus,
+.header input:active{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.card{
+    margin-top: 20px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+.card-body {
+    padding: 0;
+    font-size: 14px;
+}
+
+.posters > img {
+	border-style: none;
+	width: 100%;
+	height: 350px;
+}
+
+.posters > figcaption{
+    display: inline-block;
+    width: 80%;
+    padding: 10px;
+    height: 75px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.posters > .overview{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: all 0.5s;
+    background-color: #fff;
+    padding: 10px;
+    color: #000;
+}
+
+.posters:hover .overview{
+    transform: translateY(0);
+    height: 75%;
+    overflow-y: scroll;
+}
+
+.posters > span{
+    background-color: var(--primary-color);
+    padding: 5px;
+    display: inline-block;
+    height: 30px;
+    font-weight: bold;
+}
+
+.overview > h4{
+    text-decoration: 2px underline;
+}
+
+.green {
+    color: rgb(0, 255, 0);
+}
+.yellow {
+    color: rgb(255, 255, 0)
+}
+.orange {
+    color: rgb(255, 125, 0);
+}
+.red {
+    color: rgb(255, 0, 0);
+}
